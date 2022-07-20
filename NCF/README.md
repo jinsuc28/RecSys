@@ -1,7 +1,7 @@
 # NCF(NeuralCollaborativeFiltering)
 # 1. 배경 및 정의
 
-<img width='700' src='../img/NCF/NCFlimit.png'>
+<img width='700' src='../img/NCF/MFLimit.png'>
 
 - 위 그림 처럼 Matrix Factorization의 선형적인 한계를 지적한 모델입니다.
 - 위 그림처럼 p1과 p2 사이의 관계를 거리로 나타낼 수 있습니다. 하지만,   
