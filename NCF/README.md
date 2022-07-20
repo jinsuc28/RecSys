@@ -1,8 +1,7 @@
 # NCF(NeuralCollaborativeFiltering)
 # 1. 배경 및 정의
 
-
-<img width='700' src='..img/NCF/NCFlimit.png'>
+<img width='700' src='../img/NCF/NCFlimit.png'>
 
 - 위 그림 처럼 Matrix Factorization의 선형적인 한계를 지적한 모델입니다.
 - 위 그림처럼 p1과 p2 사이의 관계를 거리로 나타낼 수 있습니다. 하지만,   
@@ -17,23 +16,23 @@ p3는 p2와의 관계를 표현하기가 어려워집니다. 이처럼 여러 ve
 
 # 2. Objection
 
-<img width='700' src='..img/NCF/Projectionpredict.png'>
+<img width='700' src='../img/NCF/Projectionpredict.png'>
 
 - M과 N은 User와 Item 수로 rating이 아니라 0과 1데이터로 표현한다.
 - 논문은 0과 1을 선호, 비선호를 나타내는 분류가 아니라 interaction이 있는 지 implict한 예측이라고 표현한다.
 
-<img width='700' src='..img/NCF/ObjectFunction.png'>
+<img width='700' src='../img/NCF/ObjectFunction.png'>
 
 - 0과 1 확률 값을 예측하는 것이기 때문에 MLE 함수와 Min(loss) 함수 모두 사용 가능하다.
 
 # 4. Mechanism
 
-<img width='700' src='..img/NCF/GeneralFramework.png'>
+<img width='700' src='../img/NCF/GeneralFramework.png'>
 
 - 위 그림처럼 기본적으로 User, Item을 각기 One-Hot vector로 만들어 input 한다.
 - 이를 Dense Vector로 맵핑하고 User,Item의 interation을 학습하게 된다.
 
-<img width='700' src='..img/NCF/Fusion.png'>
+<img width='700' src='../img/NCF/Fusion.png'>
 
 - GMF와 MLP를 합친 것이 NMF 이다.
 - GMF는 P(uservector)와Q(itemvector)를 입력받으며 이를 내적한 vetor를 가지고 W을 곱하고 ActivationFunction 처리를 한 값을 output으로 받는다.
